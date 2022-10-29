@@ -10,11 +10,16 @@
 // Entrada
 // A entrada consiste em um valor inteiro positivo N.
 
-let lines = gets().split("\n"); 
-let n = parseInt(lines.shift()); 
 
-if (n <= 2) { 
 
- print(n); 
+const desajeitado = (n) => {
+    if (n <= 2) { console.log(n)}
+    let result = 0
+    for(let i = n; i > 0 ; i --){
+        result += i
+    }
+    return result
+}
 
-} 
+console.log(desajeitado())
+ 
